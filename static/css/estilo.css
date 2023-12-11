@@ -1,0 +1,141 @@
+/* 
+    Created on : 22 nov 2023, 8:56:24
+    Author     : Sergio
+*/
+
+body{
+    background-color: #9dd89f;
+}
+
+.principal {
+    height: 100%;
+    margin-left: 50px; /* Valor absoluto en lugar de porcentaje */
+    margin-right: 50px; /* Valor absoluto en lugar de porcentaje */
+    min-height: 100vh;
+    padding: 5%;
+
+    display: grid;
+    /*    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));*/
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 25px;
+}
+
+
+.concierto {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Ajusta los valores según tus necesidades */
+    font-family: 'Courier New', Courier, monospace;
+    width: 450px;
+    height: 225px;
+    border-radius: 10px;
+    border: 5px #0fa968 solid;
+    word-wrap: break-word;
+    background-color: #c8eac9;
+}
+
+.concierto:hover{
+
+    box-shadow: 5px 5px 40px; 
+}
+
+.contenido{
+    margin-left: 5%;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    /*    justify-content: center;*/
+}
+
+/*Imagen del concierto*/
+.imagenConcierto {
+    max-width: 100%;
+    /*    max-height: 100%;   Puedes ajustar este valor según tus necesidades */
+    height:max-content;
+    border-radius: 10px;
+}
+
+.coverImagen{
+    height: 400px;
+}
+
+/*Imagen cuando nos metemos en el concierto indicado   */
+.imagenAmplia{
+    
+     max-width: 100%;
+    /*    max-height: 100%;   Puedes ajustar este valor según tus necesidades */
+    height:max-content;
+    border-radius: 10px;
+    
+    
+}
+
+.btnCompraLink {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btnCompra {
+    border-radius: 10px;
+    height: 25px;
+    font-family: Arial;
+    padding: 2px;
+    margin-bottom: 2%;
+    background-color: aquamarine;
+    cursor:pointer;
+}
+
+/* VISTA DESPEDIDA */
+.contenedorDespedida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Añadido para centrar horizontalmente */
+    text-align: center;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.contenedorDespedida p{
+    color:#126945;
+    font-size: 35px;
+    font-family:Calibri;
+    font-weight: bolder;
+}
+
+.contenedorDespedida input {
+    width: 200px; /* Ajusta el ancho según tus preferencias */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border:4px  #126945 solid;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0; /* Ajusta el margen superior e inferior según tus preferencias */
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.contenedorDespedida input:hover{
+
+    background-color: #2c692f;
+  
+}
+
+
+

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Concierto</title>
+    <link rel="stylesheet" href="../static/css/estiloMenu.css" />
+
+
+</head>
+
+<body>
+
+    <header id="menu">   
+        <img id="cartIcon" src="../static/img/carrito5.png" alt="Carrito">
+        <a href="../Controladores/cerrarSesion.php"><img id="cerrarSesion" src="../static/img/logout.png" alt="Cerrar Sesión"></a>
+    </header>
+
+    <div id="submenu">
+        <button id="closeButton">Cerrar</button>
+        <!-- <button id="closeButton">Vaciar Carrito</button> -->
+        
+        <img id="vaciarCarrito" src="../static/img/borrar2.png" alt="Vaciar Carrito">
+        <p id="mensajeDefault">No hay nada en el carrito...</p>
+    </div>
+
+    <script src="../js/ajax_carrito.js"></script>
+    <script src="../js/carrito.js"></script>
+
+</body>
+
+</html>
