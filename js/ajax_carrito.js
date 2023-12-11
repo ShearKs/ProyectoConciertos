@@ -173,7 +173,7 @@ function crearCarritoCompra(carritoCompra) {
 }
 
 
-//Función que se encarga de crearl modal y el formulario de la aplicación
+//Función que se encarga de crear modal y el formulario de la aplicación
 function eventoPago() {
 
     const botonPago = document.getElementById("btnPago");
@@ -277,6 +277,7 @@ function vaciarCarrito() {
 
 }
 
+//Con esta función podemos crear cualquier elemento de la aplicacion
 function crearNodo(elemento, contenido, nombreClase, padre) {
 
     let nodo = document.createElement(elemento);
