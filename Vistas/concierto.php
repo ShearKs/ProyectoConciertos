@@ -5,11 +5,6 @@ require 'menu.html';
 //Obtenemos el concierto que nos ha pasado el controlador
 $concierto = $_SESSION['concierto'];
 
-// echo "latitud: " . $concierto->latitud;
-// echo "<br>";
-// echo "longitud: " . $concierto->longitud;
-
-//die();
 
 if (isset($_POST['ver_carrito'])) {
     print_r($_SESSION['carritoCompra']);

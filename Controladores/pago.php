@@ -139,8 +139,8 @@ function crearEmail($facturaPath)
         //Content
         $mail->isHTML(true);
         $mail->Subject = 'Factura Entradas';
-        $mail->Body    = 'Muchísimas gracias por comprar las entras para los eventos de verano!';
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->Body    = 'Muchísimas gracias por comprar las entras para los eventos de verano en nuestra web!.' .
+            'Aquí le adjuntamos la entrada/s para el concierto que ha comprado.s';
 
         //Adjuntamos el pdf al correo
         $mail->addAttachment($facturaPath, 'factura.pdf');
